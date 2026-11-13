@@ -42,8 +42,3 @@ as part of the Kagnus Data Analytics Virtual Internship - Week 1.
 - No completely duplicated rows or duplicate order IDs were found.
 - Categorical and numerical columns were inspected.
 - A separate cleaned dataset and cleaning log were created.
-
-## Limitations
-Some values, including the Metropolitian city label and rating values
-requiring verification, should be checked against the original dataset
-documentation before further correction.
