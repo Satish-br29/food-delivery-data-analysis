@@ -1,0 +1,6 @@
+Issue,Affected Rows,Action Taken,Reason
+Missing numeric values,4755,Filled missing values using column median,Median is less affected by extreme values than mean
+Missing categorical/text values,4376,Filled missing values with Unknown,Preserves records without guessing category values
+Possible extra spaces in text columns,Checked all text columns,Removed leading and trailing spaces,Ensures consistent text formatting
+Possible Metropolitian spelling variation,34087,Retained original value,Correct spelling needs confirmation from dataset documentation
+Negative restaurant coordinates,431,Retained values,Negative geographic coordinates can be valid
