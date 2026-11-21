@@ -111,3 +111,38 @@ food-delivery-data-analysis/
 - Cleaning decisions and assumptions are documented in the notebook and cleaning log.
 - Unverified values are not automatically assumed to be incorrect.
 - Associations observed during analysis should not be interpreted as proof of causation.
+
+## Week 2: Exploratory Data Analysis (EDA)
+
+### Objective
+Explore the cleaned food delivery dataset to understand the factors associated with delivery duration.
+
+### Analysis Performed
+- Calculated delivery duration statistics, including mean, median, percentiles, and standard deviation.
+- Analyzed delivery duration across different traffic conditions.
+- Compared delivery duration across weather conditions.
+- Calculated approximate straight-line distance using the Haversine formula.
+- Examined the relationship between distance and delivery duration.
+- Compared delivery duration across vehicle types.
+- Analyzed the effect of multiple deliveries on delivery duration.
+- Explored delivery person ratings and their relationship with delivery duration.
+
+### Key Findings
+- Average delivery duration: 26.29 minutes.
+- Jam traffic had an average delivery duration of 31.18 minutes.
+- Cloudy weather had an average delivery duration of 28.92 minutes.
+- Distance and delivery duration had a positive correlation of 0.321.
+- Motorcycle deliveries had an average duration of 27.61 minutes.
+- Records with 3 multiple deliveries had an average duration of 47.82 minutes.
+
+### Visualization
+- Initial Distance vs Delivery Duration: `visualizations/initial_distance_vs_duration.png`
+
+### Data Limitations
+- Partner experience information was not available.
+- 4,071 records were excluded from distance analysis due to suspicious coordinates.
+- Calculated distance represents straight-line distance, not actual road distance.
+- 53 records contained an unusual rating value of 6.0 and were retained without modification.
+
+### Tools Used
+Python, Pandas, NumPy, Matplotlib, Seaborn.
